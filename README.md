@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# The Book List
+The book list app is a personal project for searching New York Times bestsellers, saving them, and tagging the saved books. Before using, please get an API key from New York Times and plug it in. **Note** that this project is currently front-end only, and only stores results in memory. Refreshing the app deletes everything 'saved' in the app.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##### Run `npm install` to install packages.
+##### Then run `npm start` to start the React app.
+---
+## Features & Screenshots
+1. **Initial look**: After starting the app, there will be a search bar to enter keywords.
+![initial image](/public/initial.png)
+2. **Search Status**: The app will show a "Searching..." status after user types in a keyword in the bestseller's title and hit 'Enter' (or click the 'Search' button), before it displays results.
+![searching image](/public/searching.png)
+3. **Result Showing**: After receiving the results from New York Times API:
+![result list image](/public/list.png)
+4. **Dialog View**: Each result in the list opens as a dialog upon clicking. The dialog allows users to save the book and add tags to the book (only after saving it).
+5. **Error Handling**: If there are no results for the entered keywords or if the call was unsuccessful, the app will display a "no results available" message.
+![no results image](/public/noresults.png)
+6. **Saving & Tagging**: The saved books will be displayed below the search bar. Users may save/unsave a book by clicking the bookmark icon at three places: in the result list, in an open dialog, and in the saved books section. Once saved, the icon will be filled green. Users may add up to three tags to each book. Tags that are too long may only show the full text when mouse hovered.
+![saved books image](/public/saved.png)
 
-## Available Scripts
 
-In the project directory, you can run:
+----
+Thank you for reading!❤️
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
