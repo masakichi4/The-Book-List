@@ -12,6 +12,7 @@ The book list app is a personal project for searching New York Times bestsellers
 3. **Result Showing**: After receiving the results from New York Times API:
 ![result list image](/public/list.png)
 4. **Dialog View**: Each result in the list opens as a dialog upon clicking. The dialog allows users to save the book and add tags to the book (only after saving it).
+![result dialog image](/public/dialog.png)
 5. **Error Handling**: If there are no results for the entered keywords or if the call was unsuccessful, the app will display a "no results available" message.
 ![no results image](/public/noresults.png)
 6. **Saving & Tagging**: The saved books will be displayed below the search bar. Users may save/unsave a book by clicking the bookmark icon at three places: in the result list, in an open dialog, and in the saved books section. Once saved, the icon will be filled green. Users may add up to three tags to each book. Tags that are too long may only show the full text when mouse hovered.
